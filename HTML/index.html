@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login :: Happy Buildings</title>
     <link href="main.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
   </head>
-
+<br>
   <body>
     <header id="title">
         <center><h1><img src="logo2.png" alt="some_text" style="width:width;height:height;"></h1></center>
 
-      <div id="maincontent">
 
+
+
+
+<!--      LOGIN
+    <title>Login :: Happy Buildings</title>
+      <div id="Login">
         <h2>Login</h2>
         <br>
         <form>
@@ -20,13 +24,483 @@
               <input type="text" name="username"><br>
             <font color="white">Password:<br></font>
               <input type="password" name="pass">
+              <br>
+              <br>
+              <input id=UserAlertBox type="text" name="UserAlert" readonly>
             <br>
-            <input type="submit" value="Login">
-            <input type="reset">
+            <br>
+            <input id="LoginButton" type="submit" value="Login">
+            <input id="ResetButton" type="reset">
+            <br>
+            <br>
+            <a href="url">Register </a>
+            <a href="url">Forgot password?</a>
+            <br>
           </center>
         </form>
-
       </div>
+-->
 
-  </body>
+
+
+
+
+<!--     BuildingDirectory
+  <title>Building Directory :: Happy Buildings</title>
+    <div id="BuildingDirectory">
+      <h2>Building Directory</h2>
+      <br>
+      <table class=BuildingDirectoryTable style="width:90%">
+        <tr>
+          <th>Owner</th>
+          <th>Address</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>2 Street</td>
+          <td><input id=ViewBuildingButton type="submit" value="View"> </td>
+        </tr>
+        <tr>
+          <td>1 Street</td>
+          <td>Name</td>
+          <td><input id=ViewBuildingButton type="submit" value="View"> </td>
+        </tr>
+      </table>
+      <br>
+      <input id=SignOutButton type="submit" value="Sign Out">
+-->
+
+
+
+
+
+<!-- Building Information
+  <title>Building Information :: Happy Buildings</title>
+    <div id="BuildingInformation">
+    <h2>Building Information</h2>
+    <br>
+    <form>
+        <font color="white">Building Type:</font>
+        <input id=BuildingType type="text" name="BuildingType" placeholder="Type Of Building" readonly><br>
+    </form>
+    <input id="EditDateButton" type="submit" value="Edit" align="right">
+    <br>
+      <font color="white">Date of Construction:</font>
+      <input id="ConstructionDate" type="text" name="DateOfConstruction" placeholder="DD/MM/YYYY" readonly>
+    <br>
+    <br>
+    <p id="ProjectTitle">Projects:
+    <input id="AddNewProjectButton" type="submit" value="New Project">
+  </p>
+  <br>
+    <table class=ProjectListTable style="width:90%">
+      <tr>
+        <th>Project</th>
+        <th>Schedule</th>
+      </tr>
+      <tr>
+        <td>Project 1</td>
+        <td>Schedule 1</td>
+        <td><select name="ProjectOptions">
+                  <option value="viewProject">View Project</option>
+                  <option value="archiveProject">Archive Project</option>
+                  <option value="deleteProject">Delete Project</option>
+              </select>
+        </td>
+        <td><input id=SubmitSelection type="submit" value="Submit"></td>
+      </tr>
+      <tr>
+        <td>Project 2</td>
+        <td>Schedule 2</td>
+        <td><select name="ProjectOptions">
+                  <option value="viewProject">View Project</option>
+                  <option value="archiveProject">Archive Project</option>
+                  <option value="deleteProject">Delete Project</option>
+              </select>
+        </td>
+        <td><input id=SubmitSelection type="submit" value="Submit"></td>
+      </tr>
+    </table>
+    <br>
+    <input id=SignOutButton type="submit" value="Sign Out">
+  </div>
+-->
+
+
+
+
+
+<!-- Project Details
+<title>Building Information :: Happy Buildings</title>
+  <div id="ProjectDetails">
+  <h2>Project Information</h2>
+  <br>
+  <table class="ProjectInfoTable" style="width:90%">
+  <tr>
+    <td><form>
+        <font color=white>Project Title: </font>
+        <input id=ProjectTitleBox type="text" name="ProjectTitle" value="Title" readonly>
+      </form>
+    </td>
+    <td>
+      <form>
+        <font color=white>Start Date: </font>
+        <input id=ProjectTitleBox type="text" name="StartDate" value="DD/MM/YYYY" readonly>
+      </form>
+    </td>
+    <td>
+      <form>
+        <font color=white>Finish Date: </font>
+        <input id=ProjectTitleBox type="text" name="ProjectTitle" value="DD/MM/YYYY" readonly>
+    </form>
+   </td>
+  </tr>
+  <tr>
+    <td>
+      <form>
+          <font color=white>Contact Person: </font>
+          <input id=ProjectTitleBox type="text" name="ProjectTitle" value="Owner Name" readonly>
+      </form>
+    </td>
+    <td>
+      <form>
+          <font color=white>Project Manager: </font>
+          <input id=ProjectTitleBox type="text" name="ProjectTitle" value="Manager Name" readonly>
+      </form>
+    </td>
+    <td>
+      <form>
+          <font color=white>Contractor: </font>
+          <input id=ProjectTitleBox type="text" name="ProjectTitle" value="Contractor Name" readonly>
+      </form>
+    </td>
+  </tr>
+</table>
+  <br>
+  <table class=WorksTable style="width:90%">
+    <tr>
+      <th>ID</th>
+      <th>Works</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Job 1</td>
+      <td><select name="ProjectOptions">
+                <option value="PendingWork">Pending</option>
+                <option value="CompletedWork">Completed</option>
+                <option value="WorkingWork">Working</option>
+            </select>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Job 2</td>
+      <td><select name="ProjectOptions">
+                <option value="PendingWork">Pending</option>
+                <option value="CompletedWork">Completed</option>
+                <option value="WorkingWork">Working</option>
+            </select>
+      </td>
+    </tr>
+  </table>
+<br>
+<input id=SaveProjectInfoButton class="ProjectButtons" type="submit" value="Save">
+<input id=EditProjectInfoButton class="ProjectButtons" type="submit" value="Edit">
+<input id=UndoProjectInfoButton class="ProjectButtons" type="submit" value="Undo">
+<input id=AddProjectInfoButton class="ProjectButtons" type="submit" value="Add Job">
+<input id=DeleteProjectInfoButton class="ProjectButtons" type="submit" value="Delete">
+<br>
+<br>
+<br>
+<input id=UserAlertBox type="text" name="UserAlert" readonly>
+<table class="CommentsTable">
+<tr>
+  <th><font color=white>Manager Comments: </font></th>
+  <th><font color=white>Owner Comments: </font></th>
+  <th><font color=white align="top">Contractor Comments: </font></th>
+</tr>
+<tr>
+  <td>
+    <form>
+    <textarea name="ManagerComments" cols="30" rows="8"readonly>Manager Comments.....</textarea>
+    </form>
+  </td>
+  <td>
+    <form>
+    <textarea name="OwnerComments" cols="30" rows="8" readonly>Owner Comments.....</textarea>
+    </form>
+  </td>
+  <td>
+    <form>
+    <textarea name="ContractorComments" cols="30" rows="8" readonly>Contractor Comments.....</textarea>
+    </form>
+ </td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<input id=SignOutButton type="submit" value="Sign Out">
+-->
+
+
+
+
+
+<!-- Create Project
+<title>Building Create Project:: Happy Buildings</title>
+  <div id="CreateProject">
+    <h2>Create New Project</h2>
+    <br>
+    <table class="ProjectInfoTable" style="width:90%">
+    <tr>
+      <td><form>
+          <font color=white>Project Title: </font>
+          <input id=ProjectTitleBox type="text" name="ProjectTitle"placeholder="Title" value="">
+        </form>
+      </td>
+      <td>
+        <form>
+          <font color=white>Start Date: </font>
+          <input id=ProjectTitleBox type="text" name="StartDate" placeholder="DD/MM/YYYY" value="">
+        </form>
+      </td>
+      <td>
+        <form>
+          <font color=white>Finish Date: </font>
+          <input id=ProjectTitleBox type="text" name="ProjectTitle" placeholder="DD/MM/YYYY" value="">
+      </form>
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <form>
+            <font color=white>Contact Person: </font>
+            <input id=ProjectTitleBox type="text" name="ProjectTitle" placeholder="Owner Name" value="" >
+        </form>
+      </td>
+      <td>
+        <form>
+            <font color=white>Project Manager: </font>
+            <input id=ProjectTitleBox type="text" name="ProjectTitle" placeholder="Manager Name" value="">
+        </form>
+      </td>
+      <td>
+        <form>
+            <font color=white>Contractor: </font>
+            <input id=ProjectTitleBox type="text" name="ProjectTitle" placeholder="Contractor Name" value="">
+        </form>
+      </td>
+    </tr>
+  </table>
+    <br>
+    <table class=WorksTable style="width:90%">
+      <tr>
+        <th>ID</th>
+        <th>Works</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td><select name="ProjectOptions">
+                  <option value="PendingWork">Pending</option>
+                  <option value="CompletedWork">Completed</option>
+                  <option value="WorkingWork">Working</option>
+              </select>
+        </td>
+      </tr>
+      <tr>
+      </tr>
+    </table>
+  <br>
+  <input id=SaveProjectInfoButton class="ProjectButtons" type="submit" value="Save">
+  <input id=AddProjectInfoButton class="ProjectButtons" type="submit" value="Add Job">
+  <input id=DeleteWorkButton class="ProjectButtons" type="submit" value="Delete Job">
+  <br>
+  <br>
+  <br>
+  <input id=UserAlertBox type="text" name="UserAlert" readonly>
+  <table class="NewProjectCommentsTable">
+  <tr>
+    <th><font color=white>Manager Comments: </font></th>
+  </tr>
+  <tr>
+    <td>
+      <form>
+      <textarea name="ManagerComments" cols="60" rows="8">Manager Comments.....</textarea>
+      </form>
+    </td>
+  </tr>
+</table>
+  <br>
+  <br>
+  <br>
+  <input id=SignOutButton type="submit" value="Sign Out">
+  <input id=BackButton type="submit" value="Back">
+-->
+
+
+
+
+
+<!-- User Account Management
+<title>Manage :: Happy Buildings</title>
+  <div id="AccountManagement">
+    <h2>Account Management</h2>
+    <br>
+    <table class=AccountTable>
+      <tr>
+        <td>
+              <font color="white">First Name:<br></font>
+              <input type="text" name="First Name" placeholder="First Name">
+        </td>
+        <td>
+              <font color="white">Last Name:<br></font>
+              <input type="text" name="Last Name" placeholder="Last Name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+              <font color="white">Username:<br></font>
+              <input type="text" name="Username" placeholder="Username">
+        </td>
+        <td>
+              <font color="white">Email:<br></font>
+              <input type="text" name="Email" placeholder="abc@company.com">
+        </td>
+      </tr>
+      <tr>
+        <td>
+              <font color="white">Mobile Number:<br></font>
+              <input type="integer" name="Mobile Number" placeholder="021234567">
+        </td>
+        <td>
+              <font color="white">Landline Number:<br></font>
+              <input type="text" name="Landline Number" placeholder="Landline Number">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font color="white">Existing Password:<br></font>
+            <input type="password" name="pass">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font color="white">New Password:<br></font>
+            <input type="password" name="pass">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font color="white">Confirm New Password:<br></font>
+            <input type="password" name="pass">
+        </td>
+      </tr>
+    </table>
+
+    <input id=AccountManagementSaveButton type="submit" value="Save Changes">
+    <br>
+    <br>
+    <input id=UserAlertBox type="text" name="UserAlert" readonly>
+    <br>
+    <br>
+    <input id=SignOutButton type="submit" value="Sign Out">
+    <input id=SignOutButton type="submit" value="Go Back">
+-->
+
+
+
+
+
+<!-- User Register 
+<title>Register :: Happy Buildings</title>
+  <div id="Register">
+    <h2>Create New Account</h2>
+    <br>
+    <table class=RegisterTable>
+      <tr>
+        <td>
+              <font color="white">First Name:<br></font>
+              <input type="text" name="First Name" placeholder="First Name">
+        </td>
+        <td>
+              <font color="white">Last Name:<br></font>
+              <input type="text" name="Last Name" placeholder="Last Name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+              <font color="white">Username:<br></font>
+              <input type="text" name="Username" placeholder="Username">
+        </td>
+        <td>
+              <font color="white">Email:<br></font>
+              <input type="text" name="Email" placeholder="abc@company.com">
+        </td>
+      </tr>
+      <tr>
+        <td>
+              <font color="white">Mobile Number:<br></font>
+              <input type="integer" name="Mobile Number" placeholder="021234567">
+        </td>
+        <td>
+              <font color="white">Landline Number:<br></font>
+              <input type="text" name="Landline Number" placeholder="Landline Number">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font color="white">New Password:<br></font>
+            <input type="password" name="pass">
+        </td>
+        <td>
+          <font color="white">Confirm New Password:<br></font>
+            <input type="password" name="pass">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font color="white">Account Type:<br></font>
+        </td>
+        <td>
+          <select name="AccountType">
+                    <option value="Manager">Manager</option>
+                    <option value="Owner">Owner</option>
+                    <option value="Contractor">Contractor</option>
+                </select>
+        </td>
+      </tr>
+    </table>
+    <input id=RegCheckBox type="checkbox" name="TermsAndConditions" value="AgreeBox"><font color="white">I agree to HappyBuildings terms and conditions</font><br>
+    <br>
+    <input id=CreateNewAccount type="submit" value="Create Account">
+    <br>
+    <br>
+    <input id=UserAlertBox type="text" name="UserAlert" readonly>
+-->
+
+
+
+
+
+<!-- Forgot Password
+<title>Recover Password :: Happy Buildings</title>
+  <div id="ForgotPassword">
+    <h2>Recover Lost Password</h2>
+    <br>
+    <font color="white">Please Enter Your Email:<br></font>
+    <input type="text" name="Email" placeholder="abc@company.com">
+    <br>
+    <br>
+    <input id=RecoverPasswordButton type="submit" value="Send Recovery Email">
+    <br>
+    <br>
+    <input id=UserAlertBox type="text" name="UserAlert" readonly>
+ </div>
+ -->
+
+</body>
 </html>

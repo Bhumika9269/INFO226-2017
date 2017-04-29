@@ -2,23 +2,17 @@
     margin: 0;
 	padding: 0;
 }
-
-
-
-
 #title {
     text-align: center;
     margin: 0;
     padding: 0;
 }
-
 h1 {
 	font-size: 75px;
 	font-family: "Impact, Charcoal, sans-serif";
 	text-align: center;
 	padding-top: 20px;
 }
-
 h2{
 
 	font-size: 30px;
@@ -31,23 +25,335 @@ h2{
     text-decoration: none;
 }
 
-#maincontent {
-     height: 200px;
-     width: 400px;
-     background-color: #323232;
 
-     border-radius: 28px;
-
-     position: fixed;
-     top: 50%;
-     left: 50%;
-     margin-top: -100px;
-     margin-left: -200px;
-}
 
 
 
 html body{
      background-image: url("backgroundM.png");
      background-repeat: repeat;
+}
+
+
+
+
+
+#Login {
+     height: 250px;
+     width: 400px;
+     background-color: #323232;
+     border-radius: 28px;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     margin-top: -100px;
+     margin-left: -200px;
+}
+#LoginButton{
+  height: 30px;
+  width: 70px;
+}
+#ResetButton{
+  height: 30px;
+  width: 70px;
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    padding-left: 40px;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+
+
+#BuildingDirectory{
+  height: 250px;
+  width: 500px;
+  background-color: #323232;
+  border-radius: 28px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+table.BuildingDirectoryTable {
+    border: 4px solid white;
+    color: white;
+}
+table.BuildingDirectoryTable th{
+  font-weight: bold;
+  font-size: 20px;
+  border-right: 1px solid white;
+}
+table.BuildingDirectoryTable td{
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+#ViewBuildingButton{
+  height: 20px;
+  width: 80px;
+}
+#SignOutButton{
+  height: 30px;
+  width:70px;
+}
+#BackButton{
+  height: 30px;
+  width:70px;
+}
+
+
+
+
+
+
+
+#BuildingInformation{
+  height: 350px;
+  width: 800px;
+  background-color: #323232;
+  border-radius: 28px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -400px;
+}
+#EditDateButton{
+  width:50px;
+  margin-left: 400px;
+}
+#AddNewProjectButton{
+  margin-left: 525px;
+  width:100px;
+  height:50px;
+}
+#ProjectTitle {
+    font-size: 25px;
+    margin-left: 0px;
+    color: white;
+}
+#ViewProjectButton{
+  width:60px;
+  height:20px;
+}
+#DeleteProjectButton{
+  width:60px;
+  height:20px;
+}
+#ArchiveProjectButton{
+  width:60px;
+  height:20px;
+}
+table.ProjectListTable {
+    border: 4px solid white;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+}
+table.ProjectListTable th{
+  font-weight: bold;
+  font-size: 20px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+#ProjectDetails{
+  height: 700px;
+  width: 1200px;
+  background-color: #323232;
+  border-radius: 28px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left:-600px;
+}
+
+table.WorksTable{
+  font-weight: bold;
+  font-size: 20px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+table.WorksTable {
+    border: 4px solid white;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+}
+table.WorksTable th{
+  font-weight: bold;
+  font-size: 20px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+table.ProjectInfoTable{
+  border-spacing: 10px;
+}
+
+table.CommentsTable{
+  margin-left: 200px;
+  border-spacing: 20px;
+}
+
+input.ProjectButtons{
+  width:100px;
+  height:50px;
+}
+
+
+
+
+
+
+
+
+
+#CreateProject{
+  height: 700px;
+  width: 1200px;
+  background-color: #323232;
+  border-radius: 28px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left:-600px;
+}
+table.NewProjectCommentsTable{
+  margin-left: 350px;
+  border-spacing: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#AccountManagement{
+height: 620px;
+width: 600px;
+background-color: #323232;
+border-radius: 28px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -300px;
+margin-left:-300px;
+}
+table.AccountTable{
+
+  margin-left: 100px;
+  border-spacing: 20px;
+}
+#AccountManagementSaveButton{
+  width:100px;
+  height:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Register{
+height: 520px;
+width: 600px;
+background-color: #323232;
+border-radius: 28px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -300px;
+margin-left:-300px;
+}
+
+table.RegisterTable{
+
+  margin-left: 100px;
+  border-spacing: 20px;
+}
+#CreateNewAccount{
+  width:150px;
+  height:50px;
+}
+#RegCheckBox{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+#ForgotPassword{
+height: 300px;
+width: 600px;
+background-color: #323232;
+border-radius: 28px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -100px;
+margin-left:-300px;
+}
+
+#RecoverPasswordButton{
+  width:150px;
+  height:60px;
+}
+
+
+
+
+#UserAlertBox{
+  color:blue;
+  border: 2px solid black;
+  background-color: #323232;
 }
