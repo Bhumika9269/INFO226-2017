@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.12/angular.js" data-semver="1.4.9"></script>
+    <script src="app.js"></script>
+
 <html>
   <head>
     <link href="main.css" rel="stylesheet" type="text/css">
@@ -13,20 +23,21 @@
 
 
 
-<!--      LOGIN
+<!--   LOGIN-->
     <title>Login :: Happy Buildings</title>
       <div id="Login">
         <h2>Login</h2>
         <br>
         <form>
           <center>
-            <font color="white">User name:<br></font>
-              <input type="text" name="username"><br>
+            <font color="white">User name :<br></font>
+              <input type="text" name="username" ng-model="username">
+              <br>
             <font color="white">Password:<br></font>
-              <input type="password" name="pass">
+              <input type="password" name="pass" ng-model="passowrd">
               <br>
               <br>
-              <input id=UserAlertBox type="text" name="UserAlert" readonly>
+              <input id=UserAlertBox type="text" name="UserAlert" value= "You entered {{username}} "readonly>
             <br>
             <br>
             <input id="LoginButton" type="submit" value="Login">
@@ -39,7 +50,7 @@
           </center>
         </form>
       </div>
--->
+
 
 
 
@@ -415,7 +426,7 @@
 
 
 
-<!-- User Register 
+<!-- User Register
 <title>Register :: Happy Buildings</title>
   <div id="Register">
     <h2>Create New Account</h2>
